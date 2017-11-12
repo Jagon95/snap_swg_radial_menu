@@ -21,7 +21,8 @@
     "gulp-requirejs": "^1.0.0",
     "gulp-stylus": "^2.6.0",
     "gulp-uglify": "^3.0.0",
-    "imagemin-pngquant": "^5.0.1"
+    "imagemin-pngquant": "^5.0.1",
+    "run-sequence": "^2.2.0"
   },
   "dependencies": {}
 }

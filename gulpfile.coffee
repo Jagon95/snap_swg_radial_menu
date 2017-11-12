@@ -9,6 +9,7 @@ pngquant = require 'imagemin-pngquant'
 cleanCss = require 'gulp-clean-css'
 concat = require 'gulp-concat'
 bower = require 'gulp-bower'
+runSequence = require 'run-sequence'
 
 gulp.task 'connect', ->
   connect.server
@@ -71,6 +72,7 @@ gulp.task 'watch', ->
   gulp.watch 'stylus/*.styl', ['stylus']
   gulp.watch 'pug/*.pug', ['pug']
 
-gulp.task 'build', ['bower', 'buildcss', 'buildjs', 'img']
+gulp.task 'build', ->
+  runSequence 'bower', ['buildcss', 'buildjs', 'img']
 
 gulp.task 'default', ['pug', 'coffee', 'stylus', 'connect', 'watch']
