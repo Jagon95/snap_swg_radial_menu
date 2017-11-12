@@ -1,0 +1,55 @@
+*
+  margin 0
+  padding 0
+
+
+html, body
+  width 100%
+  height 100%
+
+body
+  background url('../img/bg.jpg') center
+  background-size cover
+  overflow hidden
+  cursor pointer
+
+body.context
+  cursor: crosshair
+  
+.hide
+  display none
+
+.radialNav
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  
+.radialnav-sector
+  fill rgba(#FFF,.3)
+  stroke rgba(#FFF,.2)
+  stroke-width 1
+  transition all .4s
+
+.radialnav-sector.active
+  fill rgba(#fff, .9)
+
+.radialnav-icon
+  z-index 1
+  fill white
+  transition all .4s
+  pointer-events none
+
+.radialnav-icon.active
+  fill #333
+
+.radialnav-hint
+  transition all .4s
+  text-anchor middle
+  fill #eee
+  opacity: 0
+  font .95em 'PT Sans', Arial, sans-serif
+  text-transform uppercase
+
+.radialnav-hint.active
+  opacity: 1

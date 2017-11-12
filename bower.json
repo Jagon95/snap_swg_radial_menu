@@ -1,0 +1,28 @@
+{
+  "name": "snap_swg",
+  "description": "",
+  "main": "gulpfile.coffee",
+  "authors": [
+    "Barrel <jagon95@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "snap",
+    "coffescript",
+    "stylus",
+    "jade"
+  ],
+  "homepage": "https://github.com/Jagon95/snap_swg_radial_menu",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "humane-js": "^3.2.2",
+    "Snap.svg": "snap.svg#^0.5.1"
+  }
+}
